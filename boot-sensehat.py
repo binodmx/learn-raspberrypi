@@ -1,6 +1,5 @@
 from sense_hat import SenseHat
 import socket
-import time
 
 sense = SenseHat()
 
@@ -15,8 +14,6 @@ def get_ip():
     finally:
         s.close()
     return ip
-
-time.sleep(15)
 
 ip_address = get_ip()
 
