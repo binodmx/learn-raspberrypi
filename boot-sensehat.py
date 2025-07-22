@@ -17,5 +17,8 @@ def get_ip():
     return ip
 
 time.sleep(15)
+
 ip_address = get_ip()
-sense.show_message(ip_address, scroll_speed=0.1, text_colour=[0, 255, 0])
+
+for i in range(3):
+    sense.show_message(ip_address, scroll_speed=0.2, text_colour=[0, 255, 0])
