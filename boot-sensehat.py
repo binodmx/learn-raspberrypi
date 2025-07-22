@@ -18,4 +18,4 @@ def get_ip():
 
 time.sleep(15)
 ip_address = get_ip()
-sense.show_message(ip_address, scroll_speed=0.05, text_colour=[0, 255, 0])
+sense.show_message(ip_address, scroll_speed=0.1, text_colour=[0, 255, 0])
