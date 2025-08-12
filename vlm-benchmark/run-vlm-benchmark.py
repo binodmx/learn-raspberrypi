@@ -18,7 +18,7 @@ wandb.init(
 # Define the requests and responses
 requests = [
     "Hello!", # This is a warm-up request to get the model ready.
-    "What is colour of the car in the image?",
+    "What is the colour of the car in the image?",
     "What is the make and model of the car in the image?",
     "What is the licence plate number of the car in the image?",
     "Is the car in the image familiar to you?",
