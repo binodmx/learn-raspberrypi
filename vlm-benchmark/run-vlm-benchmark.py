@@ -44,6 +44,8 @@ for request in requests:
       "total_duration": response.total_duration/1e9,
       "eval_count": response.eval_count,
       "prompt_eval_count": response.prompt_eval_count,
+      "eval_speed": response.eval_count / (response.eval_duration/1e9) if response.eval_duration > 0 else 0,
+      "prompt_eval_speed": response.prompt_eval_count / (response.prompt_eval_duration/1e9) if response.prompt_eval_duration > 0 else 0,
   })
   responses.append(response.message.content)
 
