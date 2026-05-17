@@ -15,8 +15,8 @@
 > Host device should have at least 8GB memory.
 1. Install docker engine in the host device as in [this](https://docs.docker.com/engine/install/).
 2. Run ollama container `docker run -d -p 11434:11434 --name ollama ollama/ollama`.
-3. Download the model `docker exec -it ollama ollama pull gemma3:4b`
+3. Download the model `docker exec -it ollama ollama pull gemma3:4b`.
 
 ## Run Experiment
-1. Run the benchmark `python run-vlm-benchmark.py`
+1. Run the benchmark `python run-vlm-benchmark.py`.
 2. Observe results on WandB.
